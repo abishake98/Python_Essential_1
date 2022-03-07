@@ -2,7 +2,16 @@
 
 No_of_Employees = 0
 
-First_Name = input("Enter your first name: ")
+y = None
+
+while y == None:
+    First_Name = input("Enter your first name: ")
+    x = len(First_Name)
+    if x == 0:
+        x = None
+    else:
+        output = First_Name
+        break
 
 Last_Name = input("Enter your last name: ")
 
@@ -22,3 +31,4 @@ while Age_str == None:
 Employee_Data = ("First Name : " + First_Name, "Last Name : " + Last_Name, "Age : " + str(Age))
 
 print(Employee_Data)
+
