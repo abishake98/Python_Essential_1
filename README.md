@@ -13,11 +13,18 @@ while y == None:
         output = First_Name
         break
 
-Last_Name = input("Enter your last name: ")
 
-Age_str = None
+while y == None:
+    Last_Name = input("Enter your last name: ")
+    x = len(Last_Name)
+    if x == 0:
+        x = None
+    else:
+        output = Last_Name
+        break
 
-while Age_str == None:
+
+while y == None:
     Age=int(input("Please enter your age: "))
     if Age < 18:
         Age = None
@@ -31,4 +38,3 @@ while Age_str == None:
 Employee_Data = ("First Name : " + First_Name, "Last Name : " + Last_Name, "Age : " + str(Age))
 
 print(Employee_Data)
-
