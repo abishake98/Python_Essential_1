@@ -13,6 +13,7 @@ for index in range(int(No_of_Employees)):
             x = None
         else:
             output = First_Name
+            print(First_Name)
             break
 
     while y == None:
@@ -22,6 +23,7 @@ for index in range(int(No_of_Employees)):
             x = None
         else:
             output = Last_Name
+            print(Last_Name)
             break
 
     while y == None:
@@ -32,7 +34,7 @@ for index in range(int(No_of_Employees)):
             Age = None
         else:
             output = Age
+            print(Age)
             break
-
-Employee_Data = ("First Name : " + First_Name, "Last Name : " + Last_Name, "Age : " + str(Age))
-print(Employee_Data)
+    Employee_Data = ["First Name : " + First_Name, "Last Name : " + Last_Name, "Age : " + str(Age)]
+    print(Employee_Data)
